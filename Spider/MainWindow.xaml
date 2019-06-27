@@ -1,0 +1,19 @@
+﻿<Window x:Class="Spider.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spider"
+        xmlns:p="clr-namespace:Spider.Properties"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="298.761" Width="800">
+    <Grid Margin="0,45,2,1">
+        <Label x:Name="DirLabel" Content="{x:Static p:Resources.LabelRoot}" HorizontalAlignment="Left" Margin="47,59,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="170,63,0,0" TextWrapping="Wrap" Text="{x:Static p:Resources.EmptyRootText}" VerticalAlignment="Top" Width="514"/>
+        <ComboBox x:Name="LanguageSelector" HorizontalAlignment="Left" Margin="662,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="LanguageSelector_SelectionChanged">
+            <ComboBoxItem IsSelected ="True" Content="Česky"/>
+            <ComboBoxItem Content="English"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

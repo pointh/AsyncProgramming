@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgramming", "AsyncProgramming\AsyncProgramming.csproj", "{58E97CAE-91EB-4975-B80F-99E858AE974F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spider", "Spider\Spider.csproj", "{AF7C237A-7BAE-4712-9F77-CC7A3014061F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{58E97CAE-91EB-4975-B80F-99E858AE974F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58E97CAE-91EB-4975-B80F-99E858AE974F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58E97CAE-91EB-4975-B80F-99E858AE974F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF7C237A-7BAE-4712-9F77-CC7A3014061F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF7C237A-7BAE-4712-9F77-CC7A3014061F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF7C237A-7BAE-4712-9F77-CC7A3014061F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF7C237A-7BAE-4712-9F77-CC7A3014061F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
