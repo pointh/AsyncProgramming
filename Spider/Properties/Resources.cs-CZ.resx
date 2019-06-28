@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ButtonCommit" xml:space="preserve">
+    <value>Hledej</value>
+  </data>
   <data name="EmptyRootText" xml:space="preserve">
     <value>Vložte startovní adresu</value>
   </data>
+  <data name="EmptySearchText" xml:space="preserve">
+    <value>Vložte vyhledávaný string</value>
+  </data>
   <data name="LabelRoot" xml:space="preserve">
     <value>Kořenový adresář</value>
+  </data>
+  <data name="LabelSearch" xml:space="preserve">
+    <value>Vyhledávaný text</value>
   </data>
   <data name="Results" xml:space="preserve">
     <value>Výsledky</value>

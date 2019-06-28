@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Globalization;
 using System.Threading;
+using System.Net.Http;
 using System.ComponentModel;
 
 namespace Spider
@@ -69,5 +70,20 @@ namespace Spider
                 this.Close();
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        /*
+        static Task<string[]> SearchAsync(string root, string search)
+        {
+            List<string> res = new List<string>();
+            HttpClient c = new HttpClient();
+
+            var m = c.GetAsync(root);
+
+        }
+        */
     }
 }

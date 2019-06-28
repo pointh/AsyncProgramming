@@ -61,6 +61,15 @@ namespace Spider.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Commit.
+        /// </summary>
+        public static string ButtonCommit {
+            get {
+                return ResourceManager.GetString("ButtonCommit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Zadej.
         /// </summary>
         public static string EmptyRootText {
@@ -70,11 +79,29 @@ namespace Spider.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Insert the searched text.
+        /// </summary>
+        public static string EmptySearchText {
+            get {
+                return ResourceManager.GetString("EmptySearchText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kořenový adresář.
         /// </summary>
         public static string LabelRoot {
             get {
                 return ResourceManager.GetString("LabelRoot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string LabelSearch {
+            get {
+                return ResourceManager.GetString("LabelSearch", resourceCulture);
             }
         }
         
