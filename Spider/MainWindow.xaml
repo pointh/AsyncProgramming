@@ -7,13 +7,9 @@
         xmlns:p="clr-namespace:Spider.Properties"
         mc:Ignorable="d"
         Title="MainWindow" Height="298.761" Width="800">
-    <Grid Margin="0,45,2,1">
+    <Grid x:Name="grid1" Margin="0,45,2,1">
         <Label x:Name="DirLabel" Content="{x:Static p:Resources.LabelRoot}" HorizontalAlignment="Left" Margin="47,59,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="170,63,0,0" TextWrapping="Wrap" Text="{x:Static p:Resources.EmptyRootText}" VerticalAlignment="Top" Width="514"/>
-        <ComboBox x:Name="LanguageSelector" HorizontalAlignment="Left" Margin="662,10,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="LanguageSelector_SelectionChanged">
-            <ComboBoxItem IsSelected ="True" Content="Česky"/>
-            <ComboBoxItem Content="English"/>
-        </ComboBox>
-
+        <ComboBox x:Name="LanguageSelector" HorizontalAlignment="Right" Margin="595,10,0,0" VerticalAlignment="Top" SelectionChanged="LanguageSelector_SelectionChanged" IsSynchronizedWithCurrentItem="False"/>
     </Grid>
 </Window>
