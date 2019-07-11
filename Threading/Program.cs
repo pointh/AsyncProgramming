@@ -44,7 +44,7 @@ namespace ThreadingNS
             }
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine(Extensions.IsPrime(20));
             Console.WriteLine(Extensions.IsPrime(23));
