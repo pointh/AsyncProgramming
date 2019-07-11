@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using ThreadingNS.ExtensionNS;
 
 /// <summary>
 /// Foreground threads musí vždy skončit před tím, než skončí hlavní thread
@@ -7,18 +8,21 @@ using System.Threading;
 /// pokud už nedokončily svou práci
 /// </summary>
 
-namespace Threading
+namespace ThreadingNS
 {
-    public static class Extensions
+    namespace ExtensionNS
     {
-        public static bool IsPrime(int i)
+        public static class Extensions
         {
-            int d = 2;
-            bool isP = true;
-            while (d * d <= i)
-                if (i % d++ == 0)
-                    return false;
-            return isP;
+            public static bool IsPrime(int i)
+            {
+                int d = 2;
+                bool isP = true;
+                while (d * d <= i)
+                    if (i % d++ == 0)
+                        return false;
+                return isP;
+            }
         }
     }
 
