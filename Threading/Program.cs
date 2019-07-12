@@ -12,9 +12,13 @@ namespace ThreadingNS
 {
     namespace ExtensionNS
     {
+        /// <summary>
+        /// Extension třída rozšiřuje metody dostupné pro typ int,
+        /// musí být statická
+        /// </summary>
         public static class Extensions
         {
-            public static bool IsPrime(int i)
+            public static bool IsPrime(this int i)
             {
                 int d = 2;
                 bool isP = true;
@@ -35,7 +39,8 @@ namespace ThreadingNS
             int i = (int) od;
             while (true)
             {
-                if (Extensions.IsPrime(i))
+                // volání rozšiřené metody pro typ int
+                if (i.IsPrime())
                 {
                     Console.WriteLine("Prime " + i);
                     Thread.Sleep(20);
@@ -73,11 +78,14 @@ namespace ThreadingNS
                     () =>
                     {
                         for (int i = 0; i < 10; i++)
+                        {
                             if (i % 2 != 0)
                             {
                                 Console.WriteLine(Thread.CurrentThread.Name + " : " + i);
                                 Thread.Sleep(200);
                             }
+                        }
+                        Console.WriteLine("Poslední liché už bylo, končíme.");
                     }
             )
             {
